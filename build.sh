@@ -36,19 +36,19 @@ function fetchAndExtractSources {
     checkSuccessfullExecution $? "Extracting $1 failed."
 }
 
-read -p "${bold}nginx${normal} version to download [1.19.2]: " -e nginxVersion
-read -p "${bold}openSSL${normal} version to download [1.1.1g]: " -e opensslVersion
+read -p "${bold}nginx${normal} version to download [1.19.3]: " -e nginxVersion
+read -p "${bold}openSSL${normal} version to download [1.1.1h]: " -e opensslVersion
 read -p "${bold}zlib${normal} version to download [1.2.11]: " -e zlibVersion
 read -p "${bold}pcre${normal} version to download [8.44]: " -e pcreVersion
 
 if test -z $nginxVersion
     then
-        nginxVersion="1.19.2"
+        nginxVersion="1.19.3"
 fi
 
 if test -z $opensslVersion
     then
-        opensslVersion="1.1.1g"
+        opensslVersion="1.1.1h"
 fi
 
 if test -z $zlibVersion
